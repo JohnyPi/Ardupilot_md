@@ -24,24 +24,104 @@ https://docs.airvolute.com/dronecore-autopilot/dcs2
 <img width="818" alt="DCS2 Pilot_bottom" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/53d0b100-b5aa-46f8-aa32-a4ba4e0890df">
 
 #### PPM connector (RC input)
+JST GH 1.25mm pitch, 3-Pin
+
+Matching connector JST GHR-03V-S.
+
 RC input is configured on the PPM_SBUS_PROT pin as part of the PPM connector. Pin is connected to UART3_RX and also to analog input on TIM3_CH1. This pin supports all RC protocols, but for it to be enabled, it is necessary to set SERIAL3 as RCIN.
 
+5V supply is limited to 1A by internal current limiter.
+<table border="1" class="docutils">
+   <tbody>
+   <tr>
+   <th>Pin </th>
+   <th>Signal </th>
+   </tr>
+    <tr>
+   <td>1</td>
+   <td>GND</td>
+   </tr>
+   <td>2</td>
+   <td>5V</td>
+   </tr>
+   <td>3</td>
+   <td>PPM</td>
+   </tr>
+   </tbody>
+   </table>
 
 ### Bottom side
 <img width="811" alt="DCS2 Pilot_top" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/b1b8a579-005d-4d7e-a9b5-60cb3fbe06f8">
 
+#### FMU SEC. connector
+JST GH 1.25mm pitch, 12-Pin
+
+Matching connector JST GHR-12V-S.
+
+5V supply is limited to 1A by internal current limiter.
+<table border="1" class="docutils">
+   <tbody>
+   <tr>
+   <th>Pin </th>
+   <th>Signal </th>
+   </tr>
+    <tr>
+   <td>1</td>
+   <td>GND</td>
+   </tr>
+   <td>2</td>
+   <td>GND</td>
+   </tr>
+   <td>3</td>
+   <td>GPIO/PWM output 4</td>
+   </tr>
+    </tr>
+   <td>4</td>
+   <td>GPIO/PWM output 3</td>
+   </tr>
+    </tr>
+   <td>5</td>
+   <td>GPIO/PWM output 2</td>
+   </tr>
+    </tr>
+   <td>6</td>
+   <td>GPIO/PWM output 1</td>
+   </tr>
+    </tr>
+   <td>7</td>
+   <td>Serial 1 RX</td>
+   </tr>
+    </tr>
+   <td>8</td>
+   <td>Serial 1 TX</td>
+   </tr>
+    </tr>
+   <td>9</td>
+   <td>Serial 2 RX</td>
+   </tr>
+    </tr>
+   <td>10</td>
+   <td>Serial 2 TX</td>
+   </tr>
+    </tr>
+   <td>11</td>
+   <td>Serial 2 RX</td>
+   </tr>
+    </tr>
+   <td>12</td>
+   <td>Serial 2 RX</td>
+   </tr>
+   </tbody>
+   </table>
+
 ## UART Mapping
 
- - SERIAL0 -> USB
- - SERIAL1 -> UART2 (Telem1)
- - SERIAL2 -> UART3 (Telem2)
-
-UARTs do not have RTS/CTS. Both UARTs are routed to FMU_SEC. connector.
-
-## RC Input
- 
-RC input is configured on the UART3_RX and is connected also to analog input on TIM3_CH1. Rc input is routed to onboard PPM connector.
+- SERIAL0 -> USB (Default baud: 115200)
+- SERIAL1 -> UART1 (FMU SEC) (Default baud: 57600, Default protocol: Mavlink2 (2))
+- SERIAL2 -> UART2 (FMU SEC) (Default baud: 57600, Default protocol: Mavlink2 (2))
+- SERIAL3 -> UART3 (PPM) (Default protocol: None, Serial can only be set to protocol: RCIN (23))
   
+UARTs do not have RTS/CTS. UARTs 1 and 2 are routed to FMU_SEC. connector.
 
 ## PWM Output
 
