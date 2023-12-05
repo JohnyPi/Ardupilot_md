@@ -58,6 +58,8 @@ JST GH 1.25mm pitch, 12-Pin
 
 Matching connector JST GHR-12V-S.
 
+The DCS2 Onboard FMU supports up to 4 PWM outputs and 2 UARTs.
+
 5V supply is limited to 1A by internal current limiter.
 <table border="1" class="docutils">
    <tbody>
@@ -122,11 +124,6 @@ Matching connector JST GHR-12V-S.
 - SERIAL3 -> UART3 (PPM) (Default protocol: None, Serial can only be set to protocol: RCIN (23))
   
 UARTs do not have RTS/CTS. UARTs 1 and 2 are routed to FMU_SEC. connector.
-
-## PWM Output
-
-The DCS2 Onboard FMU supports up to 4 PWM outputs. All 4 PWMs are routed to FMU_SEC. connector on the board.
-
 
 ## Loading Firmware
 
