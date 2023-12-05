@@ -12,12 +12,13 @@ https://docs.airvolute.com/dronecore-autopilot/dcs2
  - 2 CAN buses
  - 4 PWM outputs
  - PPM (RC input)
+ - external SPI and I2C
  - SD card connector
  - USB connection onboard with Jetson Host
  - Ethernet
 
 ## DCS2.Pilot peripherals diagram
-![DC2 Pilot peripherals](https://github.com/JohnyPi/Ardupilot_md/assets/84911328/bf908b83-9ed9-4c7d-8517-7cd163f58d1b)
+<img width="957" alt="DC2 Pilot peripherals" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/438af1a6-8030-4c15-b8d8-8f2c139ee4c6">
 
 ## DCS2.Pilot onboard FMU related connectors pinout
 ### Top side
