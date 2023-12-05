@@ -50,7 +50,7 @@ RC input is configured on the PPM_SBUS_PROT pin as part of the PPM connector. Pi
    </table>
 
 ### Bottom side
-<img width="811" alt="DCS2 Pilot_top" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/b1b8a579-005d-4d7e-a9b5-60cb3fbe06f8">
+<img width="811" alt="DCS2 Pilot_top" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/2e3a8ad9-c219-42c7-bbee-3b15ba3762d3">
 
 #### <ins>FMU SEC. connector</ins>
 JST GH 1.25mm pitch, 12-Pin
@@ -118,6 +118,77 @@ Channels within the same group need to use the same output rate. If any channel 
    </tr>
    </tbody>
    </table>
+   
+   #### <ins>EXT. SENS. connector</ins>
+   BM23PF0.8-10DS-0.35V connector
+   
+   Matching connector BM23PF0.8-10DP-0.35V
+   
+   This connector allows connecting external IMU with I2C and SPI data buses.
+
+   5V supply is limited to 1.9A by internal current limiter.
+<table border="1" class="docutils">
+   <tbody>
+   <tr>
+   <th>Pin </th>
+   <th>Signal </th>
+   </tr>
+    <tr>
+   <td>1</td>
+   <td>SPI_MOSI</td>
+   </tr>
+   <td>2</td>
+   <td>SPI_MISO</td>
+   </tr>
+   <td>3</td>
+   <td>SPI_SCK</td>
+   </tr>
+    </tr>
+   <td>4</td>
+   <td>SPI_CS0</td>
+   </tr>
+    </tr>
+   <td>5</td>
+   <td>SPI_CS1</td>
+   </tr>
+    </tr>
+   <td>6</td>
+   <td>SPI_CS2</td>
+   </tr>
+    </tr>
+   <td>7</td>
+   <td>SPI_CS3</td>
+   </tr>
+    </tr>
+   <td>8</td>
+   <td>IMU_DRDY_EXT</td>
+   </tr>
+    </tr>
+   <td>9</td>
+   <td>I2C_SE_SDA</td>
+   </tr>
+    </tr>
+   <td>10</td>
+   <td>I2C_SE_SCL</td>
+   </tr>
+    </tr>
+   <td>MP1</td>
+   <td>5V</td>
+   </tr>
+    </tr>
+   <td>MP2</td>
+   <td>5V</td>
+   </tr>
+    </tr>
+   <td>MP3</td>
+   <td>GND</td>
+   </tr>
+    </tr>
+   <td>MP4</td>
+   <td>GND</td>
+   </tr>
+   </tbody>
+   </table>
 
    #### <ins>ETH EXP. connector</ins>
    505110-1692 connector
@@ -126,83 +197,16 @@ Channels within the same group need to use the same output rate. If any channel 
    
    The onboard FMU is connected via the RMII bus with a speed of 100 Mbits.
    
-   5V supply is limited to 1A by internal current limiter.
-   <table border="1" class="docutils">
-   <tbody>
-   <tr>
-   <th>Pin </th>
-   <th>Signal </th>
-   </tr>
-    <tr>
-   <td>1</td>
-   <td>GBE_B3_P</td>
-   </tr>
-   <td>2</td>
-   <td>GBE_B3_N</td>
-   </tr>
-   <td>3</td>
-   <td>GND</td>
-   </tr>
-    </tr>
-   <td>4</td>
-   <td>GBE_M2_P</td>
-   </tr>
-    </tr>
-   <td>5</td>
-   <td>GBE_M2_N</td>
-   </tr>
-    </tr>
-   <td>6</td>
-   <td>GND</td>
-   </tr>
-    </tr>
-   <td>7</td>
-   <td>GBE_M1_P</td>
-   </tr>
-    </tr>
-   <td>8</td>
-   <td>GBE_M1_N</td>
-   </tr>
-    </tr>
-   <td>9</td>
-   <td>GND</td>
-   </tr>
-    </tr>
-   <td>10</td>
-   <td>GBE_M0_P</td>
-   </tr>
-    </tr>
-   <td>11</td>
-   <td>GBE_M0_N</td>
-   </tr>
-    </tr>
-   <td>12</td>
-   <td>GND</td>
-   </tr>
-    </tr>
-   <td>13</td>
-   <td>GBE_LED_LINK</td>
-   </tr>
-    </tr>
-   <td>14</td>
-   <td>GBE_LED_ACK</td>
-   </tr>
-    </tr>
-   <td>15</td>
-   <td>5V</td>
-   </tr>
-    </tr>
-   <td>16</td>
-   <td>5V</td>
-   </tr>
-   </tbody>
-   </table>
+   #### <ins>SD card connector</ins>
+   MEM2085-00-115-00-A connector
+   
+   Connector for standard microSD memory card. This card is primarily used to store flight data and logs.
    
 ## Other connectors
 ### CAN 1, CAN 2 connectors
 The board contains two CAN buses - CAN1 and CAN 2. The buses support speeds up to 1 Mbits and in FD mode up to 8 Mbits. 
 
-These connectors are not part of DCS2.Pilot board, but they are routed on DCS2.Adapter_board. For more informations see: https://docs.airvolute.com/dronecore-autopilot/dcs2/adapter-extension-boards/dcs2.-adapter-default-v1.0/connectors-and-pinouts
+These connectors are not part of DCS2.Pilot board, but they are routed on DCS2.Adapter_board. This board (DCS2.Adapter_board) is fully modular and can be modified according to the customer's requirements. For more informations see: https://docs.airvolute.com/dronecore-autopilot/dcs2/adapter-extension-boards/dcs2.-adapter-default-v1.0/connectors-and-pinouts
 
 JST GH 1.25mm pitch, 4-Pin
 
