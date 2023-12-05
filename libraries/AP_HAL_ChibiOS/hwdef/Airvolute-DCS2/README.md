@@ -17,7 +17,14 @@ https://docs.airvolute.com/dronecore-autopilot/dcs2
  - Ethernet
 
 ## DCS2.Pilot peripherals diagram
-![DC2.Pilot peripherals](DC2.Pilot peripherals.svg)
+![DC2 Pilot peripherals](https://github.com/JohnyPi/Ardupilot_md/assets/84911328/bf908b83-9ed9-4c7d-8517-7cd163f58d1b)
+
+## DCS2.Pilot onboard FMU related connectors pinout
+### Top side
+<img width="818" alt="DCS2 Pilot_bottom" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/53d0b100-b5aa-46f8-aa32-a4ba4e0890df">
+
+### Bottom side
+<img width="811" alt="DCS2 Pilot_top" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/b1b8a579-005d-4d7e-a9b5-60cb3fbe06f8">
 
 ## UART Mapping
 
