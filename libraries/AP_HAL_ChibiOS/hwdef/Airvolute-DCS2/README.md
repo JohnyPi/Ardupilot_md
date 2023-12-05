@@ -12,6 +12,7 @@ https://docs.airvolute.com/dronecore-autopilot/dcs2
  - 2 CAN buses
  - 4 PWM outputs
  - PPM (RC input)
+ - SD card connector
  - USB connection onboard with Jetson Host
  - Ethernet
 
