@@ -18,11 +18,11 @@ https://docs.airvolute.com/dronecore-autopilot/dcs2
  - Ethernet
 
 ## DCS2.Pilot peripherals diagram
-<img width="957" alt="DC2 Pilot peripherals" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/438af1a6-8030-4c15-b8d8-8f2c139ee4c6">
+<img width="957" alt="DC2 Pilot peripherals" src="https://github.com/JohnyPi/Ardupilot_md/blob/main/libraries/AP_HAL_ChibiOS/hwdef/Airvolute-DCS2/DC2.Pilot%20peripherals.png">
 
 ## DCS2.Pilot onboard FMU related connectors pinout
 ### Top side
-<img width="818" alt="DCS2 Pilot_bottom" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/53d0b100-b5aa-46f8-aa32-a4ba4e0890df">
+<img width="818" alt="DCS2 Pilot_bottom" src="https://github.com/JohnyPi/Ardupilot_md/blob/main/libraries/AP_HAL_ChibiOS/hwdef/Airvolute-DCS2/DCS2.Pilot_TopSide.png">
 
 #### <ins>PPM connector (RC input)</ins>
 JST GH 1.25mm pitch, 3-Pin
@@ -52,7 +52,7 @@ RC input is configured on the PPM_SBUS_PROT pin as part of the PPM connector. Pi
    </table>
 
 ### Bottom side
-<img width="811" alt="DCS2 Pilot_top" src="https://github.com/JohnyPi/Ardupilot_md/assets/84911328/2e3a8ad9-c219-42c7-bbee-3b15ba3762d3">
+<img width="811" alt="DCS2 Pilot_top" src="https://github.com/JohnyPi/Ardupilot_md/blob/main/libraries/AP_HAL_ChibiOS/hwdef/Airvolute-DCS2/DCS2.Pilot_BottomSide.png">
 
 #### <ins>FMU SEC. connector</ins>
 JST GH 1.25mm pitch, 12-Pin
