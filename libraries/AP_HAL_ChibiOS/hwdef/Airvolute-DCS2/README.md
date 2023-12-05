@@ -1,5 +1,5 @@
 # Onboard FMU on Airvolute DCS2.Pilot board
-
+For more informations on DCS2.Pilot board see:
 https://docs.airvolute.com/dronecore-autopilot/dcs2
 
 
@@ -10,9 +10,14 @@ https://docs.airvolute.com/dronecore-autopilot/dcs2
  - Barometer: BMP390
  - 2 UARTS
  - 2 CAN buses
- - 4 PWM outputs 
+ - 4 PWM outputs
+ - RC input
  - Buzzer output
  - USB connection onboard with Jetson Host
+ - Ethernet
+
+## DCS2.Pilot peripherals diagram
+![ScreenShot](https://docs.airvolute.com/dronecore-autopilot/dcs2/.pilot-boards/dcs2.pilot-v-1.0/peripherals)
 
 ## UART Mapping
 
@@ -24,7 +29,7 @@ UARTs do not have RTS/CTS. Both UARTs are routed to FMU_SEC. connector.
 
 ## RC Input
  
-RC input is configured on the UART3_RX and is connected also to analog input on TIM3_CH1. Rc input is routed to onboard connector (JST 3-pin )
+RC input is configured on the UART3_RX and is connected also to analog input on TIM3_CH1. Rc input is routed to onboard PPM connector.
   
 
 ## PWM Output
