@@ -17,7 +17,7 @@ https://docs.airvolute.com/dronecore-autopilot/dcs2
  - Ethernet
 
 ## DCS2.Pilot peripherals diagram
-![ScreenShot](https://docs.airvolute.com/dronecore-autopilot/dcs2/.pilot-boards/dcs2.pilot-v-1.0/peripherals)
+![DCS2.Pilot periprherals](DC2.Pilot peripherals.svg "DC2.Pilot peripherals")
 
 ## UART Mapping
 
